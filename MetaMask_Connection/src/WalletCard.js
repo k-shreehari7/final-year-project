@@ -54,10 +54,10 @@ const WalletCard = () => {
 	}
 
 
-	// listen for account changes
-	window.ethereum.on('accountsChanged', accountChangedHandler);
+	// listen for account changes  Below Lines of code are not working
+	// window.ethereum.on('accountsChanged', accountChangedHandler);
 
-	window.ethereum.on('chainChanged', chainChangedHandler);
+	// window.ethereum.on('chainChanged', chainChangedHandler);
 	
 	return (
 		<div className='walletCard'>
